@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import ToniManning from './ToniManning';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <ToniManning />
+        </BrowserRouter>
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
