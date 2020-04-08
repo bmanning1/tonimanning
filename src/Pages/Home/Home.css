@@ -1,0 +1,26 @@
+.arrow {
+    position: absolute;
+}
+
+.arrow img {
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 70vh;
+}
+
+.home-img {
+    width: 100vw;
+}
+
+#about {
+    max-width: 40em;
+    margin: auto;
+}

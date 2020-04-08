@@ -1,0 +1,52 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page p {
+    font-size: 0.8em;
+    margin-bottom: 4em;
+    padding: 1em 0.2em 0;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 40em) {
+    .about-page p {
+        padding: 1em 2.5em 0;
+    }
+}
+
+.about-title {
+    color: #66584A;
+    font-weight: inherit;
+}
+
+.about-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-imgs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-imgs div:nth-child(1) img:nth-child(1) {
+    height: 23.9em;
+}
+
+.about-imgs div:nth-child(1) img:nth-child(2) {
+    height: 18.5em;
+}
+
+.about-imgs div:nth-child(2) img {
+    height: 14em;
+}
+
+.about-imgs img {
+    width: 19.6em;
+    object-fit: cover;
+    margin: 0.2em;
+}
