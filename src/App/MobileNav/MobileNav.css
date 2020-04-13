@@ -1,0 +1,79 @@
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-2%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.mobile-button-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    position: fixed;
+    top: 2.5em;
+    left: 2em;
+    z-index: 99;
+    color: #66584A;
+}
+
+.mobile-button-lines div {
+    height: 2px;
+    width: 28px;
+    background: #66584A;
+    transition: all 0.5s ease;
+}
+
+.mobile-button-lines div:nth-child(1) {
+    transform-origin: top left;
+    margin-bottom: 8px;
+}
+
+.mobile-button-lines div:nth-child(3) {
+    transform-origin: top left;
+    margin-top: 8px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    opacity: 0.95;
+    transition: height 0.3s ease;
+    z-index: 2;
+}
+
+.mobile-menu > div:nth-child(1) {
+    margin-top: 6rem;
+}
+
+.mobile-menu > div {
+    opacity: 0;
+    animation: 1s appear forwards;
+    margin: 1em;
+    text-align: center;
+}
+
+.mobile-menu > div > div, .mobile-menu a {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #66584A;
+    transition: color 0.2s ease-in-out;
+    animation: 0.5s slideIn forwards;
+    text-decoration: none;
+}

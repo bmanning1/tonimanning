@@ -1,0 +1,27 @@
+.desktop-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+}
+
+.desktop-menu li {
+    list-style-type: none;
+    margin: 0 2em;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #66584A;
+}
+
+.social-media  {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 0.5em;
+    color: #66584A;
+}
