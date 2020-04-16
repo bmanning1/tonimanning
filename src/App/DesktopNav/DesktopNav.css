@@ -5,9 +5,20 @@
     padding: 0;
 }
 
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 .desktop-menu li {
     list-style-type: none;
     margin: 0 2rem;
+    opacity: 0;
+    animation: 2s appear forwards;
 }
 
 .desktop-menu a {

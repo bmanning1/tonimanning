@@ -33,6 +33,18 @@
     color: #66584A;
 }
 
+@media only screen and (max-width: 30rem) {
+    .footer li {
+        margin: 0 1rem;
+    }
+    .footer a {
+        font-size: 0.8rem;
+    }
+    .footer ul {
+        margin-top: 4rem
+    }
+}
+
 .active {
     font-weight: bold;
 }

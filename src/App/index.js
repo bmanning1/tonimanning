@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Route, Redirect } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 import Home from '../Pages/Home';
 import Therapies from '../Pages/Therapies';
 import Pricing from '../Pages/Pricing';
