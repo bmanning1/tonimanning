@@ -7,12 +7,12 @@
 
 .desktop-menu li {
     list-style-type: none;
-    margin: 0 2em;
+    margin: 0 2rem;
 }
 
 .desktop-menu a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #66584A;
 }
 
@@ -22,6 +22,6 @@
 }
 
 .social-media a {
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
     color: #66584A;
 }

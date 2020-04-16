@@ -9,6 +9,7 @@ import './DesktopNav.css';
 const DesktopNav = () => (
     <ul className="desktop-menu">
         <li><NavLink exact to="/">Home</NavLink></li>
+        {/* <li><div styles={{ animationDelay: '0.1s' }}><NavLink exact to="/">Home</NavLink></div></li> */}
         <li><Link to="/#about">About</Link></li>
         <li><NavLink to="/therapies">Therapies</NavLink></li>
         <li><NavLink to="/pricing">Pricing</NavLink></li>

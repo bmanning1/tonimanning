@@ -23,8 +23,8 @@
     align-items: flex-start;
     cursor: pointer;
     position: fixed;
-    top: 2.5em;
-    left: 2em;
+    top: 2.5rem;
+    left: 2rem;
     z-index: 99;
     color: #66584A;
 }
@@ -65,7 +65,7 @@
 .mobile-menu > div {
     opacity: 0;
     animation: 1s appear forwards;
-    margin: 1em;
+    margin: 1rem;
     text-align: center;
 }
 
