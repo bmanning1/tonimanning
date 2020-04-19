@@ -26,6 +26,7 @@
 .about-imgs {
     display: flex;
     flex-flow: row wrap;
+    min-height: 80vh;
 }
 
 .about-img-col {
