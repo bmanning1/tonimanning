@@ -1,0 +1,35 @@
+.therapies-page {
+    margin-top: 4rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row a {
+    flex-grow: 1;
+    margin-top: 5%;
+    text-align: center;
+    color: var(--mediumGray);
+    flex-basis: 0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 30rem) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 50rem) and (min-width: 30rem) {
+    .therapy-info + .therapy-info {
+        margin-left: 5% !important;
+    }
+}
+
+@media only screen and (min-width: 30rem) {
+    .therapy-info + .therapy-info {
+        margin-left: 10% !important;
+    }
+}

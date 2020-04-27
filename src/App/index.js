@@ -3,6 +3,7 @@ import { NavLink, Route, Redirect } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import Home from '../Pages/Home';
 import Therapies from '../Pages/Therapies';
+import Therapy from '../Pages/Therapy';
 import Pricing from '../Pages/Pricing';
 import Blog from '../Pages/Blog';
 import Contact from '../Pages/Contact';
@@ -21,7 +22,7 @@ const App = () => (
         <div className="content">
             <Route exact path="/" render={() => <Fade><Home/></Fade>}/>
             <Route exact path="/therapies" render={() => <Fade><Therapies/></Fade>}/>
-                <Route path="/therapies" render={() => <Fade><Therapies/></Fade>}/>
+            <Route path="/therapies/:therapy" render={() => <Fade><Therapy /></Fade>}/>
             <Route path="/pricing" render={() => <Fade><Pricing/></Fade>}/>
             <Route path="/blog" render={() => <Fade><Blog/></Fade>}/>
             <Route path="/contact" render={() => <Fade><Contact/></Fade>}/>
