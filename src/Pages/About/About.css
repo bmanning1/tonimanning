@@ -6,20 +6,20 @@
 }
 
 .about-page p {
-    font-size: 1rem;
-    margin-bottom: 4rem;
+    font-size: var(--smallFontSize);
     text-align: justify;
+    color: var(--mediumGray);
 }
 
 @media only screen and (max-width: 30rem) {
     .about-page p {
-        font-size: .8rem;
+        font-size: var(--xSmallFontSize);
         margin-bottom: 3rem;
     }
 }
 
 .about-title {
-    color: #66584A;
+    color: var(--mediumGray);
     font-weight: inherit;
 }
 
@@ -27,6 +27,7 @@
     display: flex;
     flex-flow: row wrap;
     min-height: 80vh;
+    margin-top: 3em;
 }
 
 .about-img-col {

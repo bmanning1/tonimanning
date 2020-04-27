@@ -20,7 +20,6 @@
     padding: 0;
     margin: 7rem auto 3rem auto;
     width: fit-content;
-    font-size: 0.7rem;
 }
 
 .footer li {
@@ -30,8 +29,12 @@
 
 .footer a {
     text-decoration: none;
-    font-size: 1rem;
-    color: #66584A;
+    font-size: var(--smallFontSize);
+    color: var(--mediumGray);
+}
+
+.footer a:hover {
+    color: var(--darkGray);
 }
 
 @media only screen and (max-width: 30rem) {
@@ -39,7 +42,7 @@
         margin: 0 1rem;
     }
     .footer a {
-        font-size: 0.8rem;
+        font-size: var(--xSmallFontSize);
     }
     .footer ul {
         margin-top: 4rem
@@ -47,5 +50,5 @@
 }
 
 .active {
-    font-weight: bold;
+    color: var(--darkGray) !important;
 }

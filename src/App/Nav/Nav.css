@@ -16,6 +16,40 @@
     }
 }
 
+.desktop-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.desktop-menu li {
+    list-style-type: none;
+    opacity: 0;
+    animation: 2s appear forwards;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    font-size: var(--mediumFontSize);
+    color: var(--mediumGray);
+}
+
+.social-media  {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    color: var(--mediumGray);
+}
+
+.social-media a:hover, .desktop-menu a:hover {
+    color: var(--darkGray);
+}
+
 .mobile-button-lines {
     display: flex;
     flex-direction: column;
@@ -26,13 +60,13 @@
     top: 2.5rem;
     left: 2rem;
     z-index: 99;
-    color: #66584A;
+    color: var(--mediumGray);
 }
 
 .mobile-button-lines div {
     height: 2px;
     width: 28px;
-    background: #66584A;
+    background: var(--mediumGray);
     transition: all 0.5s ease;
 }
 
@@ -70,9 +104,9 @@
 }
 
 .mobile-menu > div > div, .mobile-menu a {
-    font-size: 1.2rem;
+    font-size: var(--mediumFontSize);
     cursor: pointer;
-    color: #66584A;
+    color: var(--mediumGray);
     transition: color 0.2s ease-in-out;
     animation: 0.5s slideIn forwards;
     text-decoration: none;
