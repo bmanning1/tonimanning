@@ -8,7 +8,7 @@ export const scrollTo = (height) => window.scrollTo({
     behavior: 'smooth',
 });
 
-const ScrollToOnMount = () => {
+export const ScrollToOnMount = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
@@ -17,5 +17,3 @@ const ScrollToOnMount = () => {
 
     return null;
 };
-
-export default ScrollToOnMount;

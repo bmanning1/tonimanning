@@ -1,7 +1,7 @@
 import React from 'react';
 import About from '../About';
 import homeBackground from '../../static/HomePage/Background.jpg';
-import { scrollTo, aboutHeight } from '../../utils/ScrollToTop';
+import { scrollTo, aboutHeight } from '../../utils/ScrollTo';
 import './Home.css';
 
 const Home = () => (

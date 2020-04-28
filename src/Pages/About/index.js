@@ -4,7 +4,7 @@ import BenchPortrait from '../../static/AboutPage/BenchPortrait.jpg';
 import MassageRoom from '../../static/AboutPage/MassageRoom.jpg';
 import OutdoorsTable from '../../static/AboutPage/OutdoorsTable.jpg';
 import ViewLandscape from '../../static/AboutPage/ViewLandscape.jpg';
-import ScrollToOnMount from '../../utils/ScrollToTop';
+import { ScrollToOnMount } from '../../utils/ScrollTo';
 import './About.css';
 
 const About = () => (
