@@ -54,13 +54,14 @@ const Submitted = ({ isSubmitted }) => {
 }
 
 const Contact = () => {
-    const [submitted, isSubmitted] = useState('');
+    const [submitted, isSubmitted] = useState(false);
 
     return (
-    <div>
-        <h1>Contact Page</h1>
-        {submitted ? <Submitted isSubmitted={isSubmitted} /> : <ContactForm isSubmitted={isSubmitted} />}
-    </div>
-)};
+        <div>
+            <h1>Contact Page</h1>
+            {submitted ? <Submitted isSubmitted={isSubmitted} /> : <ContactForm isSubmitted={isSubmitted} />}
+        </div>
+    )
+};
 
 export default Contact;

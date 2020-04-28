@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import ScrollToTop from './utils/ScrollToTop';
+import ScrollToOnMount from './utils/ScrollToTop';
 import './index.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <ScrollToTop>
-                <App />
-            </ScrollToTop>
-        </BrowserRouter>
+        <Router basename={process.env.PUBLIC_URL}>
+            <ScrollToOnMount />
+            <App />
+        </Router>
     </React.StrictMode>,
   document.getElementById('root')
 );

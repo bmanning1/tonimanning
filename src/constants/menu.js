@@ -5,7 +5,7 @@ export default [
     },
     {
         name: 'About',
-        path: '/#about'
+        path: '/about'
     },
     {
         name: 'Therapies',

@@ -1,44 +1,53 @@
 import React from 'react';
-import { NavLink, Route, Redirect } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
+import { NavLink, Route, Redirect, Switch, useLocation } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from '../Pages/Home';
 import Therapies from '../Pages/Therapies';
-import Therapy from '../Pages/Therapy';
 import Pricing from '../Pages/Pricing';
 import Blog from '../Pages/Blog';
 import Contact from '../Pages/Contact';
 import Nav from './Nav';
 import './App.css';
 
-const App = () => {
-    const isSmallScreen = useMediaQuery({ query: '(max-width: 56.6em)' });
+//TODO: Sort the jaggery image loading
+//TODO: Mobile compatible
+//TODO: Add Hover stuff
 
-const App = () => (
-    <div className="toni-manning">
-        <div className="header">
-            <img className="logo" alt="logo" src="" />
-            <Nav/>
-        </div>
-        <div className="content">
-            <Route exact path="/" render={() => <Fade><Home/></Fade>}/>
-            <Route exact path="/therapies" render={() => <Fade><Therapies/></Fade>}/>
-            <Route path="/therapies/:therapy" render={() => <Fade><Therapy /></Fade>}/>
-            <Route path="/pricing" render={() => <Fade><Pricing/></Fade>}/>
-            <Route path="/blog" render={() => <Fade><Blog/></Fade>}/>
-            <Route path="/contact" render={() => <Fade><Contact/></Fade>}/>
-            <Route path="/privacy" render={() => <h4>privacy</h4>}/>
-            <Route path="/faq" render={() => <h4>faq</h4>}/>
-            <Route path="/qualifications" render={() => <h4>qualifications</h4>}/>
-            <Route render={() => <Redirect to="/" />} />
-        </div>
-        <div className="footer">
-            <ul>
+const App = () => {
+    const location = useLocation();
+
+    return (
+        <div className="toni-manning">
+            <div className="header">
+                <img className="logo" alt="logo" src="" />
+                <Nav/>
+            </div>
+            <TransitionGroup>
+                <CSSTransition
+                    key={location.key}
+                    timeout={{ enter: 500 }}
+                    classNames="fade"
+                >
+                    <Switch className="content" location={location}>
+                        <Route path="/therapies"><Therapies/></Route>
+                        <Route path="/pricing"><Pricing/></Route>
+                        <Route path="/blog"><Blog/></Route>
+                        <Route path="/contact"><Contact/></Route>
+                        <Route path="/privacy"><h4>privacy</h4></Route>
+                        <Route path="/faq"><h4>faq</h4></Route>
+                        <Route path="/qualifications"><h4>qualifications</h4></Route>
+                        <Route path="/"><Home/></Route>
+                        <Route render={() => <Redirect to="/" />} />
+                    </Switch>
+                </CSSTransition>
+            </TransitionGroup>
+            <ul className="footer">
                 <li><NavLink exact to="/privacy">Privacy</NavLink></li>
                 <li><NavLink to="/faq">FAQ</NavLink></li>
                 <li><NavLink to="/qualifications">Qualifications</NavLink></li>
             </ul>
         </div>
-    </div>
-);
+    );
+};
 
 export default App;

@@ -6,7 +6,7 @@ import './TherapyInfo.css';
 
 const TherapyInfo = ({ therapy }) => {
     let match = useRouteMatch();
-    const { name, img, prices } = therapies[therapy]
+    const { name, img, prices } = therapies[therapy];
 
     return (
         <NavLink className="therapy-info" to={`${match.url}/${therapy}`}>

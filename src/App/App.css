@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.footer ul {
+.footer {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -44,11 +44,20 @@
     .footer a {
         font-size: var(--xSmallFontSize);
     }
-    .footer ul {
+    .footer {
         margin-top: 4rem
     }
 }
 
 .active {
     color: var(--darkGray) !important;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
 }

@@ -1,12 +1,21 @@
 import { useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const ScrollToTop = ({ location, children }) => {
+export const aboutHeight = window.innerHeight;
+
+export const scrollTo = (height) => window.scrollTo({
+    top: height || 0,
+    behavior: 'smooth',
+});
+
+const ScrollToOnMount = () => {
+    const { pathname } = useLocation();
+
     useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [location])
+        scrollTo(pathname === '/about' && aboutHeight);
+    }, [pathname]);
 
-    return children
-}
+    return null;
+};
 
-export default withRouter(ScrollToTop)
+export default ScrollToOnMount;
