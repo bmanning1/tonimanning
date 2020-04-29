@@ -9,11 +9,11 @@ export const scrollTo = (height) => window.scrollTo({
 });
 
 export const ScrollToOnMount = () => {
-    const { pathname } = useLocation();
+    const { pathname, key } = useLocation();
 
     useEffect(() => {
         scrollTo(pathname === '/about' && aboutHeight);
-    }, [pathname]);
+    }, [pathname, key]);
 
     return null;
 };
