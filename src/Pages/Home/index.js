@@ -5,13 +5,13 @@ import { scrollTo, aboutHeight } from '../../utils/ScrollTo';
 import './Home.css';
 
 const Home = () => (
-    <div className="home-page">
+    <React.Fragment>
         <div className="home">
             <img className="home-img" alt="massage" src={homeBackground} />
             <button className="arrow" onClick={() => scrollTo(aboutHeight)}><div /></button>
         </div>
         <About />
-    </div>
+    </React.Fragment>
 );
 
 export default Home;

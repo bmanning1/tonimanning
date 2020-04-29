@@ -1,4 +1,4 @@
-.therapy-page {
+.therapy {
     display: flex;;
     flex-direction: column;
 }
@@ -35,6 +35,10 @@
     color: var(--darkGray);
     text-decoration: none;
     font-size: var(--largeFontSize);
+}
+
+.therapy-img {
+    width: 100%;
 }
 
 .therapy-text {

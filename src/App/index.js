@@ -8,6 +8,7 @@ import Contact from '../Pages/Contact';
 import Nav from './Nav';
 import Fade from '../utils/Fade';
 import './App.css';
+import { ScrollToOnMount } from '../utils/ScrollTo';
 
 //TODO: Sort the jaggery image loading
 //TODO: Mobile compatible
@@ -25,14 +26,15 @@ const App = () => {
             <Fade onChange={location.key}>
                 <Switch className="content" location={location}>
                     <Route path="/therapies"><Therapies/></Route>
-                    <Route path="/pricing"><Pricing/></Route>
-                    <Route path="/blog"><Blog/></Route>
-                    <Route path="/contact"><Contact/></Route>
-                    <Route path="/privacy"><h4>privacy</h4></Route>
-                    <Route path="/faq"><h4>faq</h4></Route>
-                    <Route path="/qualifications"><h4>qualifications</h4></Route>
-                    <Route path="/"><Home/></Route>
-                    <Route render={() => <Redirect to="/" />} />
+                    <Route exact path="/pricing"><Pricing/></Route>
+                    <Route exact path="/blog"><Blog/></Route>
+                    <Route exact path="/contact"><Contact/></Route>
+                    <Route exact path="/privacy"><h4>privacy</h4></Route>
+                    <Route exact path="/faq"><h4>faq</h4></Route>
+                    <Route exact path="/qualifications"><h4>qualifications</h4></Route>
+                    <Route exact path="/about"><ScrollToOnMount /><Home/></Route>
+                    <Route exact path="/"><Home/></Route>
+                    <Route path="*"><Redirect to="/" /></Route>
                 </Switch>
             </Fade>
             <ul className="footer">

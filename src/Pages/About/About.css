@@ -1,18 +1,18 @@
-.about-page {
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
 }
 
-.about-page p {
+.about p {
     font-size: var(--smallFontSize);
     text-align: justify;
     color: var(--mediumGray);
 }
 
 @media only screen and (max-width: 30rem) {
-    .about-page p {
+    .about p {
         font-size: var(--xSmallFontSize);
         margin-bottom: 3rem;
     }
