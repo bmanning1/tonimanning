@@ -5,23 +5,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import menu from '../../constants/menu';
+import Fade from '../../utils/Fade';
 import './Nav.css';
 
+const MenuItems = ({ onClick }) => menu.map(({ name, path }, i) => (
+    <li key={`menu-item-${i}`}>
+        <Fade>
+            <Link exact activeClassName="active" onClick={onClick} to={path}>
+                {name}
+            </Link>
+        </Fade>
+    </li>
+))
+
 const DesktopNav = () => (
-    <ul className="desktop-menu">
-        {
-            menu.map(({ name, path }, i) => (
-                <li key={`menu-item-${i}`}>
-                    <Link exact activeClassName="active" to={path}>{name}</Link>
-                </li>
-            ))
-        }
-        <li className="social-media">
-            <a href="/"><FontAwesomeIcon icon={faFacebookF} /></a>
-            <a href="/"><FontAwesomeIcon icon={faEnvelope} /></a>
-            <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
-        </li>
-    </ul>
+        <ul className="desktop-menu">
+            <MenuItems />
+            <li className="social-media">
+                <Fade>
+                    <a href="/"><FontAwesomeIcon icon={faFacebookF} /></a>
+                    <a href="/"><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
+                </Fade>
+            </li>
+        </ul>
 );
 
 const MobileNav = () => {
@@ -34,16 +41,10 @@ const MobileNav = () => {
                 <div style={{ opacity: menuOpen ? 0 : 1, transform: menuOpen ? 'translateX(-16px)' : 'none' }} />
                 <div style={{ transform: menuOpen ? 'translateX(-1px) rotate(-45deg)' : 'none' }} />
             </div>
-            {
-                menuOpen && <div className="mobile-menu" style={{ height: menuOpen ? '100%' : 0 }}>
-                    {menu.map(({ name, path }, i) => (
-                        <div key={`menu-item-${i}`}><div styles={{ animationDelay: `${i / 10}s` }}>
-                            <Link exact activeClassName="active" onClick={() => setMenuOpen(false)} to={path}>
-                                {name}
-                            </Link>
-                        </div></div>
-                    ))}
-                </div>
+            {menuOpen &&
+                <ul className="mobile-menu" style={{ height: menuOpen ? '100%' : 0 }}>
+                    <MenuItems onClick={() => setMenuOpen(false)} />
+                </ul>
             }
         </React.Fragment>
     )
