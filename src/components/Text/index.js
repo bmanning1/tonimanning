@@ -13,7 +13,7 @@ const StyledTypography = withStyles((
     root: {
         fontSize: ({ size }) => fonts[size],
         color: ({ lightcolor }) => (lightcolor === 1 ? mediumGray : darkGray),
-        margin: ({ marginbottom }) => (marginbottom ? `1rem 0 ${marginbottom}` : '1rem 0')
+        margin: ({ marginbottom }) => (marginbottom ? `0.8rem 0 ${marginbottom}` : '0.8rem 0')
     }
 }))(Typography);
 

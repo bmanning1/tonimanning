@@ -18,7 +18,7 @@ const Therapies = () => {
 
             <Switch>
                 <Route exact path={path}>
-                    <Text marginbottom="2rem">Please select a therapy for more information.</Text>
+                    <Text marginbottom="1.8rem">Please select a therapy for more information.</Text>
 
                     <Grid container spacing={6}>
                         {Object.entries(therapies).map(([therapy, { name, img, pricesFrom }], i) => (

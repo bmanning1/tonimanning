@@ -10,6 +10,6 @@ export const StyledButton = withStyles({
 
 export const StyledForm = withStyles({
     root: {
-        minWidth: '12rem'
+        minWidth: '11.8rem'
     }
 })(Form);

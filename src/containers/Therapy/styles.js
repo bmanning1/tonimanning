@@ -5,7 +5,7 @@ import NavLink from '../../components/NavLink';
 
 export const StyledButton = withStyles({
     root: {
-        marginTop: '3rem'
+        marginTop: '2.6rem'
     }
 })(Button);
 

@@ -24,11 +24,10 @@ const theme = createMuiTheme({
         ].join(',')
     },
     fonts: {
-        xLarge: '2.2rem',
-        large: '1.5rem',
-        medium: '1.2rem',
-        small: '1rem',
-        xSmall: '0.8rem'
+        xLarge: '1.7rem',
+        large: '1.3rem',
+        medium: '1rem',
+        small: '0.88rem'
     },
     colors: {
         darkGray: '#706d6d',

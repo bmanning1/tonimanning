@@ -24,9 +24,9 @@ const StyledButton = withStyles(({
 }) => ({
     root: {
         borderRadius: '30px',
-        padding: '1rem 4rem',
+        padding: '0.8rem 3.8rem',
         width: 'fit-content',
-        margin: ({ nofill }) => (nofill ? 'auto' : '2rem auto'),
+        margin: ({ nofill }) => (nofill ? 'auto' : '1.8rem auto'),
         color: darkGray,
         display: 'flex',
         fontSize: ({ size = 'medium' }) => fonts[size],

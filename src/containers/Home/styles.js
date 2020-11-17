@@ -17,17 +17,17 @@ export const StyledBox = withStyles({
 
 export const Heading = withStyles({
     root: {
-        width: '50rem',
+        width: '48.8rem',
         maxWidth: '100%',
         position: 'absolute',
-        top: '5rem'
+        top: '4rem'
     }
 })(Img);
 
 export const SubHeading = withStyles({
     root: {
         position: 'absolute',
-        top: '12rem'
+        top: '11.2rem'
     }
 })(Text);
 

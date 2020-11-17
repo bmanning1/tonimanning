@@ -16,7 +16,7 @@ const StyledTextField = withStyles(({
     }
 }) => ({
     root: {
-        margin: '8px 0',
+        margin: '5px 0',
         '& label': {
             fontSize: medium
         },

@@ -9,8 +9,8 @@ const StyledAlert = withStyles(({
     }
 }) => ({
     root: {
-        marginBottom: '1rem',
-        padding: '0.6rem 1rem',
+        marginBottom: '0.8rem',
+        padding: '0.4rem 0.8rem',
         fontSize: small
     }
 }))(MaterialUIAlert);

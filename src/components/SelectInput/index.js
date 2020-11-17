@@ -19,7 +19,7 @@ const StyledFormControl = withStyles(({
     }
 }) => ({
     root: {
-        margin: '8px 0',
+        margin: '5px 0',
         '& label': {
             fontSize: medium
         },
@@ -39,6 +39,16 @@ const StyledFormControl = withStyles(({
     }
 }))(FormControl);
 
+const StyledMenuItem = withStyles(({
+    fonts: {
+        small
+    }
+}) => ({
+    root: {
+        fontSize: small
+    }
+}))(MenuItem);
+
 const SelectInput = ({ keyName, label, value, options, onChange }) => (
     <StyledFormControl>
         <InputLabel>
@@ -47,9 +57,9 @@ const SelectInput = ({ keyName, label, value, options, onChange }) => (
 
         <Select value={value} onChange={onChange}>
             {options.map((name, i) => (
-                <MenuItem key={`${keyName}-${i}`} value={name}>
+                <StyledMenuItem key={`${keyName}-${i}`} value={name}>
                     {name}
-                </MenuItem>
+                </StyledMenuItem>
             ))}
         </Select>
     </StyledFormControl>

@@ -61,7 +61,7 @@ const MobileNav = () => {
 };
 
 const Nav = () => {
-    const isSmallScreen = useMediaQuery({ query: '(max-width: 56.6em)' });
+    const isSmallScreen = useMediaQuery({ query: '(max-width: 50rem)' });
 
     return (
         <div className="nav-container">

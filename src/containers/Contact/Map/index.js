@@ -26,7 +26,7 @@ const StyledMap = withStyles({
     root: {
         width: '100%',
         height: '100%',
-        minWidth: '12rem',
+        minWidth: '11.8rem',
         opacity: '0',
         transition: 'opacity 2s'
     }

@@ -7,7 +7,7 @@ export const StyledLink = withStyles(({
     }
 }) => ({
     root: {
-        margin: '0 0.5rem',
+        margin: '0 0.3rem',
         color: mediumGray,
         '&:hover': {
             color: darkGray
@@ -22,7 +22,7 @@ export const StyledBox = withStyles(({
 }) => ({
     root: {
         position: 'absolute',
-        bottom: '2rem',
+        bottom: '1.8rem',
         fontSize: medium,
         display: 'flex',
         alignItems: 'center'

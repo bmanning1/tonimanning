@@ -13,7 +13,7 @@ const StyledTypography = withStyles(({
         fontSize: xLarge,
         color: darkGray,
         fontWeight: 'inherit',
-        margin: '2.7rem'
+        margin: '2rem'
     }
 }))(Typography);
 
