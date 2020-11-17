@@ -4,7 +4,7 @@ const Fade = ({ onChange, children }) => {
     const [fade, setFade] = useState(false);
 
     const hiddenStyle = {
-        opacity: 0.1,
+        opacity: 0.1
     };
 
     const fadeInStyle = {

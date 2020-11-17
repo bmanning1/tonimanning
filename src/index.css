@@ -4,9 +4,11 @@
 }
 
 :root {
+  /* --darkGray: #303030; */
   --darkGray: #706d6d;
   --mediumGray: #aaa29c;
-  --lightGray: #b2ada8;
+  --lightGray: #e9e7e6;
+  --xLargeFontSize: 2.2rem;
   --largeFontSize: 1.5rem;
   --mediumFontSize: 1.2rem;
   --smallFontSize: 1rem;
