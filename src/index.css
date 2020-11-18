@@ -8,11 +8,10 @@
   --darkGray: #706d6d;
   --mediumGray: #aaa29c;
   --lightGray: #e9e7e6;
-  --xLargeFontSize: 2rem;
+  --xLargeFontSize: 1.7rem;
   --largeFontSize: 1.3rem;
   --mediumFontSize: 1rem;
-  --smallFontSize: 0.8rem;
-  --xSmallFontSize: 0.6rem;
+  --smallFontSize: 0.88rem;
 }
 
 body {

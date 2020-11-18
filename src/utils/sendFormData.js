@@ -1,3 +1,4 @@
+// const formURL = '/forms/d/1Hk0Dnpke-BDf48D-iVL3rIzr7wdDFlroUyI9ivBvUC8/formResponse';
 const formURL = 'https://docs.google.com/forms/d/1Hk0Dnpke-BDf48D-iVL3rIzr7wdDFlroUyI9ivBvUC8/formResponse';
 
 // NOTE: Get googleID values from submitting the form and checking the request
@@ -20,16 +21,22 @@ const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
         method: 'POST',
         // mode: 'no-cors', // for development only
         headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json'
+            // 'Access-Control-Allow-Origin': '*',
+            // 'Content-Type': 'application/json',
+            // Accept: 'application/json',
+            'X-Requested-With': 'https://docs.google.com'
         },
         body: formData
     };
 
-    fetch(formURL, formConfig)
-        .then(() => {
-            resetForm();
-            alertSuccess();
+    fetch(`https://cors-anywhere.herokuapp.com/${formURL}`, formConfig)
+        .then((res) => {
+            if (res.status === 200) {
+                resetForm();
+                alertSuccess();
+            } else {
+                throw new Error('test');
+            }
         })
         .catch(() => {
             setError('Error, please try again or contact Toni with the details on this page');
