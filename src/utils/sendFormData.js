@@ -3,11 +3,11 @@ const proxyURL = 'https://bm-cors-proxy.herokuapp.com';
 
 // NOTE: Get googleID values from submitting the form and checking the request
 const googleIDs = {
-    name: 'entry.1633920210',
-    email: 'entry.227649005',
-    phone: 'entry.1770822543',
-    booking: 'entry.1263655967',
-    message: 'entry.1846923513'
+    name: 'entry.2005620554',
+    email: 'entry.1045781291',
+    phone: 'entry.1166974658',
+    booking: 'entry.716122332',
+    message: 'entry.839337160'
 };
 
 const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
