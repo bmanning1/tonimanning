@@ -1,13 +1,13 @@
-// const formURL = '/forms/d/1Hk0Dnpke-BDf48D-iVL3rIzr7wdDFlroUyI9ivBvUC8/formResponse';
 const formURL = 'https://docs.google.com/forms/d/1Hk0Dnpke-BDf48D-iVL3rIzr7wdDFlroUyI9ivBvUC8/formResponse';
+const proxyURL = 'https://bm-cors-proxy.herokuapp.com';
 
 // NOTE: Get googleID values from submitting the form and checking the request
 const googleIDs = {
-    name: 'entry.2005620554',
-    email: 'entry.1045781291',
-    phone: 'entry.1166974658',
-    booking: 'entry.716122332',
-    message: 'entry.839337160'
+    name: 'entry.1633920210',
+    email: 'entry.227649005',
+    phone: 'entry.1770822543',
+    booking: 'entry.1263655967',
+    message: 'entry.1846923513'
 };
 
 const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
@@ -19,17 +19,14 @@ const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
 
     const formConfig = {
         method: 'POST',
-        // mode: 'no-cors', // for development only
         headers: {
-            // 'Access-Control-Allow-Origin': '*',
-            // 'Content-Type': 'application/json',
-            // Accept: 'application/json',
-            'X-Requested-With': 'https://docs.google.com'
+            'X-Requested-With': 'https://docs.google.com',
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: formData
     };
 
-    fetch(`https://cors-anywhere.herokuapp.com/${formURL}`, formConfig)
+    fetch(`${proxyURL}/${formURL}`, formConfig)
         .then((res) => {
             if (res.status === 200) {
                 resetForm();
