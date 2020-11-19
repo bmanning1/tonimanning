@@ -31,18 +31,24 @@ const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
 
     // POST does not work for some reason but works on POSTMAN
     // ************************** POST **************************
-    const formData = new FormData();
-    Object.entries(googleIDs).forEach(([entry, googleID]) => {
-        formData.append(googleID, data[entry]);
-    });
-    const formConfig = {
-        method: 'POST',
-        headers: {
-            'X-Requested-With': 'https://docs.google.com',
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: formData
-    };
+ const searchParams = Object.keys(googleIDs)
+    .map((key) => {
+      return (
+        encodeURIComponent(googleIDs[key]) + "=" + encodeURIComponent(data[key])
+      );
+    })
+    .join("&");
+
+  const formConfig = {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "X-Requested-With": "https://docs.google.com",
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    },
+    body: searchParams,
+  };
+
     fetch(`${proxyURL}/${formURL}`, formConfig)
     // ************************** POST **************************
         .then((res) => {
