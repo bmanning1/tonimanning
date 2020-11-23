@@ -5,8 +5,8 @@ import Therapy from '../Therapy';
 import therapies from '../../utils/therapies';
 import Title from '../../components/Title';
 import Text from '../../components/Text';
-import NavLink from '../../components/NavLink';
-import { StyledImg } from './styles';
+// import NavLink from '../../components/NavLink';
+import { StyledImg, StyledNavLink } from './styles';
 
 const Therapies = () => {
     const { path, url } = useRouteMatch();
@@ -23,17 +23,19 @@ const Therapies = () => {
                     <Grid container spacing={6}>
                         {Object.entries(therapies).map(([therapy, { name, img, pricesFrom }], i) => (
                             <Grid item xs={6} sm={4} key={`therapy-${i}`}>
-                                <NavLink to={`${url}/${therapy}`}>
+                                <StyledNavLink opacity={loaded ? '1' : '0'} to={`${url}/${therapy}`}>
+                                    {/* <NavLink  to={`${url}/${therapy}`}> */}
                                     <StyledImg
                                         alt={name}
                                         src={img}
-                                        style={loaded ? { opacity: 1 } : {}}
+                                        // style={loaded ? { opacity: 1 } : {}}
                                         onLoad={() => setLoaded(true)}
                                     />
 
                                     <Text size="medium">{name}</Text>
                                     <Text lightcolor>From £{pricesFrom}</Text>
-                                </NavLink>
+                                    {/* </NavLink> */}
+                                </StyledNavLink>
                             </Grid>
                         ))}
                     </Grid>

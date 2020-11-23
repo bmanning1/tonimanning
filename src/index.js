@@ -7,15 +7,16 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'fontsource-roboto';
 
-// TODO: Remove warnings in console
+// TODO: Remove warnings in console (including about snackbars)
 // TODO: Remove images not used
 // TODO: Do the public bit with the manifesto etc.
 // TODO: Update Privacy policy
 // TODO: About page
-// TODO: Contact page
+// TODO: Contact page validation
 // TODO: Nav component
 // TODO: Mobile view (use breakpoint in material UI)
 // TODO: Move Map to components folder
+// TODO: use <Box component="" for form etc. rather
 
 const theme = createMuiTheme({
     typography: {

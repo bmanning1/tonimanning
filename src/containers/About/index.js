@@ -1,8 +1,8 @@
 import React from 'react';
 import Text from '../../components/Text';
 import Title from '../../components/Title';
-import Toni from '../../static/About/Toni.jpg';
-import { StyledImg } from './styles';
+// import Toni from '../../static/About/Toni.jpg';
+// import { StyledImg } from './styles';
 
 const About = () => (
     <>
@@ -16,7 +16,7 @@ const About = () => (
             Association.
         </Text>
 
-        <StyledImg alt="Toni Manning" src={Toni} />
+        {/* <StyledImg alt="Toni Manning" src={Toni} /> */}
     </>
 );
 

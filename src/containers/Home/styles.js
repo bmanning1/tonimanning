@@ -2,7 +2,7 @@ import { Box, withStyles } from '@material-ui/core';
 import Text from '../../components/Text';
 import Img from '../../components/Img';
 
-export const StyledBox = withStyles({
+export const StyledBox = withStyles(() => ({
     root: {
         display: 'flex',
         flexDirection: 'column',
@@ -10,10 +10,10 @@ export const StyledBox = withStyles({
         justifyContent: 'flex-end',
         position: 'relative',
         height: '90vh',
-        opacity: '0',
-        transition: 'opacity 3s'
+        transition: 'opacity 2s',
+        opacity: ({ opacity }) => opacity
     }
-})(Box);
+}))(Box);
 
 export const Heading = withStyles({
     root: {
@@ -31,10 +31,10 @@ export const SubHeading = withStyles({
     }
 })(Text);
 
-export const Background = withStyles({
+export const Background = withStyles(() => ({
     root: {
         minWidth: '100vw',
         height: '100vh',
         objectFit: 'cover'
     }
-})(Img);
+}))(Img);

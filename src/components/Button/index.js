@@ -41,15 +41,18 @@ const StyledButton = withStyles(({
     }
 }))(MaterialUIButton);
 
-const Button = ({ to, ...props }) => {
-    const { nofill } = props;
+const Button = ({ to, nofill, ...props }) => {
+    const buttonProps = {
+        disableRipple: nofill,
+        nofill: nofill ? 'true' : undefined,
+        ...props
+    };
 
     return (to ? (
         <StyledNavLink to={to}>
-            <StyledButton disableRipple={nofill} {...props} />
+            <StyledButton {...buttonProps} />
         </StyledNavLink>
-    ) : <StyledButton disableRipple={nofill} {...props} />
-    );
+    ) : <StyledButton {...buttonProps} />);
 };
 
 export default Button;

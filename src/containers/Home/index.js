@@ -8,7 +8,7 @@ const Home = () => {
     const [loaded, setLoaded] = useState(false);
 
     return (
-        <StyledBox style={loaded ? { opacity: 1 } : {}}>
+        <StyledBox opacity={loaded ? '1' : '0'}>
             <Heading alt="logo" src={Logo} />
             <SubHeading size="large">Therapeutic Massage in Hertfordshire</SubHeading>
 

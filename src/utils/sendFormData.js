@@ -1,7 +1,10 @@
+// eslint-disable-next-line max-len
 const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdW3mZBm-pMc9hD3HZqSQdEEx5SV0O4cQ0YjAUwp-nLtWNkpQ/formResponse';
 
-// const proxyURL = 'https://cors-anywhere.herokuapp.com'; // Proxy for testing as the one below whitelists domains
-const proxyURL = 'https://bm-cors-proxy.herokuapp.com';
+// NOTE: bm-cors-proxy whitelists urls so cannot be used locally
+const proxyURL = process.env.REACT_APP_ENV === 'local'
+    ? 'https://cors-anywhere.herokuapp.com'
+    : 'https://bm-cors-proxy.herokuapp.com';
 
 // NOTE: Get googleID values from submitting the form and checking the request
 const googleIDs = {
@@ -12,25 +15,7 @@ const googleIDs = {
     message: 'entry.100639756'
 };
 
-const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
-    // GET works but shouldn't be used as it's bad to send data in URL
-    // ************************** GET **************************
-    // const formURLQuery = [];
-    // Object.entries(googleIDs).forEach(([entry, googleID]) => {
-    //     formURLQuery.push(`${googleID}=${data[entry]}`);
-    // });
-    // const formConfig = {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-Requested-With': 'https://docs.google.com',
-    //         'Content-Type': 'application/x-www-form-urlencoded'
-    //     }
-    // };
-    // fetch(`${proxyURL}/${formURL}?${formURLQuery.join('&')}`, formConfig)
-    // ************************** GET **************************
-
-    // POST does not work for some reason but works on POSTMAN
-    // ************************** POST **************************
+const sendFormData = async({ data }) => {
     const searchParams = Object.keys(googleIDs)
         .map((key) => (
             `${encodeURIComponent(googleIDs[key])}=${encodeURIComponent(data[key])}`
@@ -47,20 +32,9 @@ const sendFormData = ({ data, resetForm, alertSuccess, setError }) => {
         body: searchParams
     };
 
-    fetch(`${proxyURL}/${formURL}`, formConfig)
-    // ************************** POST **************************
-        .then((res) => {
-            console.log(111111111, res);
-            if (res.status === 200) {
-                resetForm();
-                alertSuccess();
-            } else {
-                throw new Error();
-            }
-        })
-        .catch(() => {
-            setError('ERROR Please try again or contact Toni with the details on this page');
-        });
+    return fetch(`${proxyURL}/${formURL}`, formConfig)
+        .then((res) => res.status)
+        .catch((err) => err.status);
 };
 
 export default sendFormData;
