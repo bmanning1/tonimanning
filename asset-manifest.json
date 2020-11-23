@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/tonimanning/static/css/main.077584e1.chunk.css",
-    "main.js": "/tonimanning/static/js/main.6fa9b045.chunk.js",
-    "main.js.map": "/tonimanning/static/js/main.6fa9b045.chunk.js.map",
+    "main.js": "/tonimanning/static/js/main.e62159bf.chunk.js",
+    "main.js.map": "/tonimanning/static/js/main.e62159bf.chunk.js.map",
     "runtime-main.js": "/tonimanning/static/js/runtime-main.e184085b.js",
     "runtime-main.js.map": "/tonimanning/static/js/runtime-main.e184085b.js.map",
     "static/css/2.53b9c325.chunk.css": "/tonimanning/static/css/2.53b9c325.chunk.css",
-    "static/js/2.9b379626.chunk.js": "/tonimanning/static/js/2.9b379626.chunk.js",
-    "static/js/2.9b379626.chunk.js.map": "/tonimanning/static/js/2.9b379626.chunk.js.map",
+    "static/js/2.920c5096.chunk.js": "/tonimanning/static/js/2.920c5096.chunk.js",
+    "static/js/2.920c5096.chunk.js.map": "/tonimanning/static/js/2.920c5096.chunk.js.map",
     "index.html": "/tonimanning/index.html",
-    "precache-manifest.9e0304b885ab51d7fbc9d4eb65ccb0ed.js": "/tonimanning/precache-manifest.9e0304b885ab51d7fbc9d4eb65ccb0ed.js",
+    "precache-manifest.389fb4badc4fee5e901cec22517f8dac.js": "/tonimanning/precache-manifest.389fb4badc4fee5e901cec22517f8dac.js",
     "service-worker.js": "/tonimanning/service-worker.js",
     "static/css/2.53b9c325.chunk.css.map": "/tonimanning/static/css/2.53b9c325.chunk.css.map",
     "static/css/main.077584e1.chunk.css.map": "/tonimanning/static/css/main.077584e1.chunk.css.map",
-    "static/js/2.9b379626.chunk.js.LICENSE.txt": "/tonimanning/static/js/2.9b379626.chunk.js.LICENSE.txt",
+    "static/js/2.920c5096.chunk.js.LICENSE.txt": "/tonimanning/static/js/2.920c5096.chunk.js.LICENSE.txt",
     "static/media/Background.jpg": "/tonimanning/static/media/Background.bcf18fb4.jpg",
     "static/media/Bespoke.jpg": "/tonimanning/static/media/Bespoke.7fca8cdf.jpg",
     "static/media/DeepRelaxation.jpg": "/tonimanning/static/media/DeepRelaxation.853ca5d4.jpg",
@@ -25,14 +25,13 @@
     "static/media/Online.jpg": "/tonimanning/static/media/Online.1a1dfb1e.jpg",
     "static/media/index.css": "/tonimanning/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2",
     "static/media/Reflexology.jpg": "/tonimanning/static/media/Reflexology.617203e3.jpg",
-    "static/media/Sports.jpg": "/tonimanning/static/media/Sports.f13ebbe1.jpg",
-    "static/media/Toni.jpg": "/tonimanning/static/media/Toni.4e9fe787.jpg"
+    "static/media/Sports.jpg": "/tonimanning/static/media/Sports.f13ebbe1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e184085b.js",
     "static/css/2.53b9c325.chunk.css",
-    "static/js/2.9b379626.chunk.js",
+    "static/js/2.920c5096.chunk.js",
     "static/css/main.077584e1.chunk.css",
-    "static/js/main.6fa9b045.chunk.js"
+    "static/js/main.e62159bf.chunk.js"
   ]
 }
