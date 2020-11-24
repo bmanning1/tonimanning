@@ -6,8 +6,8 @@ import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'fontsource-roboto';
+import ScrollToTop from './utils/ScrollToTop';
 
-// TODO: scroll page up to top when navigating
 // TODO: Nav component
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
@@ -42,6 +42,7 @@ const theme = createMuiTheme({
 ReactDOM.render(
     <MuiThemeProvider theme={theme}>
         <Router basename={process.env.PUBLIC_URL}>
+            <ScrollToTop />
             <App />
         </Router>
     </MuiThemeProvider>,
