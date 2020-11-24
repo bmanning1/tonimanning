@@ -5,7 +5,11 @@ const Loading = () => {
     const [waitingText, setWaitingText] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setWaitingText('Sorry for the wait...'), 4000);
+        const timeout = setTimeout(() => setWaitingText('Sorry for the wait...'), 4000);
+
+        return () => {
+            clearTimeout(timeout);
+        };
     }, []);
 
     return (

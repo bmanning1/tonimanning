@@ -1,67 +1,31 @@
 import React from 'react';
-import {
-    FormControl,
-    Select,
-    MenuItem,
-    InputLabel,
-    withStyles
-} from '@material-ui/core';
+import { FormHelperText, InputLabel, Select } from '@material-ui/core';
+import { Controller } from 'react-hook-form';
+import { StyledFormControl, StyledMenuItem } from './styles';
+import schema from '../../utils/schema';
 
-const StyledFormControl = withStyles(({
-    colors: {
-        lightGray,
-        mediumGray,
-        darkGray
-    },
-    fonts: {
-        small,
-        medium
-    }
-}) => ({
-    root: {
-        margin: '5px 0',
-        '& label': {
-            fontSize: medium
-        },
-        '& label.Mui-focused': {
-            color: darkGray
-        },
-        '& input, & .MuiInputBase-root': {
-            color: darkGray,
-            fontSize: small
-        },
-        '& .MuiInput-underline:after, & .MuiInput-underline:before': {
-            borderBottomColor: lightGray
-        },
-        '& .MuiInput-underline:hover:not(.Mui-disabled):before, & .Mui-focused.MuiInput-underline:after': {
-            borderBottomColor: mediumGray
-        }
-    }
-}))(FormControl);
-
-const StyledMenuItem = withStyles(({
-    fonts: {
-        small
-    }
-}) => ({
-    root: {
-        fontSize: small
-    }
-}))(MenuItem);
-
-const SelectInput = ({ keyName, label, value, options, onChange }) => (
-    <StyledFormControl>
+const SelectInput = ({ name, label, options, control, error }) => (
+    <StyledFormControl error={!!error}>
         <InputLabel>
             {label}
         </InputLabel>
 
-        <Select value={value} onChange={onChange}>
-            {options.map((name, i) => (
-                <StyledMenuItem key={`${keyName}-${i}`} value={name}>
-                    {name}
-                </StyledMenuItem>
-            ))}
-        </Select>
+        <Controller
+            as={(
+                <Select>
+                    {options.map((option, i) => (
+                        <StyledMenuItem key={`${name}-${i}`} value={option}>
+                            {option}
+                        </StyledMenuItem>
+                    ))}
+                </Select>
+            )}
+            name={name}
+            control={control}
+            rules={schema[name]}
+        />
+
+        {!!error && <FormHelperText>{error.message}</FormHelperText>}
     </StyledFormControl>
 );
 
