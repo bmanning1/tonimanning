@@ -16,7 +16,7 @@ const About = () => (
             Association.
         </Text>
 
-        {/* <StyledImg alt="Toni Manning" src={Toni} /> */}
+        {/* <StyledImg component="img" alt="Toni Manning" src={Toni} /> */}
     </>
 );
 

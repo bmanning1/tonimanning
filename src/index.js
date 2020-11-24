@@ -8,15 +8,20 @@ import './index.css';
 import 'fontsource-roboto';
 import ScrollToTop from './utils/ScrollToTop';
 
+// LONG
 // TODO: Nav component
+// TODO: Mobile view (use breakpoint in material UI)
+
+// QUICK
+// TODO: Red line under booking/enquiry when errors
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
-// TODO: use <Box component="" for form etc. rather
 // TODO: Remove warnings in console
-// TODO: Update Privacy policy
-// TODO: About page
 // TODO: Do the public bit with the manifesto etc.
-// TODO: Mobile view (use breakpoint in material UI)
+
+// WAITING ON
+// TODO: About page
+// TODO: Update Privacy policy
 // TODO: Remove images not used
 
 const theme = createMuiTheme({

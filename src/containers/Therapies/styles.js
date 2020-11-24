@@ -1,6 +1,5 @@
-import { withStyles } from '@material-ui/core';
+import { Box, withStyles } from '@material-ui/core';
 import NavLink from '../../components/NavLink';
-import Img from '../../components/Img';
 
 export const StyledImg = withStyles({
     root: {
@@ -12,12 +11,13 @@ export const StyledImg = withStyles({
             opacity: '0.6'
         }
     }
-})(Img);
+})(Box);
 
 export const StyledNavLink = withStyles({
     root: {
         transition: 'opacity 2s',
         opacity: ({ opacity }) => opacity,
+        textDecoration: 'none',
         '& p': {
             transition: 'opacity 2s',
             opacity: ({ opacity }) => opacity

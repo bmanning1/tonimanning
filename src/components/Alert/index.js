@@ -1,28 +1,8 @@
 import React from 'react';
-import { Snackbar, withStyles } from '@material-ui/core';
-import { Alert as MaterialUIAlert } from '@material-ui/lab';
-import Text from '../Text';
+import { Snackbar } from '@material-ui/core';
+import { StyledAlert, StyledText } from './styles';
 
-const StyledAlert = withStyles(({
-    fonts: {
-        small
-    }
-}) => ({
-    root: {
-        marginBottom: '0.8rem',
-        padding: '0.4rem 0.8rem',
-        fontSize: small
-    }
-}))(MaterialUIAlert);
-
-const StyledText = withStyles({
-    root: {
-        color: 'white',
-        margin: '0'
-    }
-})(Text);
-
-const Alert = ({ open, onClose, type = 'success', text }) => (
+const Alert = ({ open, onClose, text, type = 'success' }) => (
     <Snackbar
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         open={open}

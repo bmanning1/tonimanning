@@ -1,6 +1,5 @@
 import { Box, withStyles } from '@material-ui/core';
 import Button from '../../components/Button';
-import Img from '../../components/Img';
 import NavLink from '../../components/NavLink';
 
 export const StyledButton = withStyles({
@@ -14,7 +13,7 @@ export const StyledImg = withStyles({
         width: '100%',
         marginTop: '1rem'
     }
-})(Img);
+})(Box);
 
 export const StyledNavLink = withStyles({
     root: {

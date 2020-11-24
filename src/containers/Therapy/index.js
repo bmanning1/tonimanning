@@ -38,7 +38,7 @@ const TherapyDetails = ({ name, prices, description, img }) => (
             </Grid>
 
             <Grid item xs={12} sm={6}>
-                <StyledImg src={img} alt={name} />
+                <StyledImg component="img" src={img} alt={name} />
             </Grid>
         </Grid>
     </StyledBox>

@@ -1,6 +1,5 @@
-import { withStyles } from '@material-ui/core';
+import { Box, withStyles } from '@material-ui/core';
 import Button from '../../../components/Button';
-import Form from '../../../components/Form';
 
 export const StyledButton = withStyles({
     root: {
@@ -10,6 +9,8 @@ export const StyledButton = withStyles({
 
 export const StyledForm = withStyles({
     root: {
+        display: 'flex',
+        flexDirection: 'column',
         minWidth: '11.8rem'
     }
-})(Form);
+})(Box);

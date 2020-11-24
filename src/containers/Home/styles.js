@@ -1,6 +1,5 @@
 import { Box, withStyles } from '@material-ui/core';
 import Text from '../../components/Text';
-import Img from '../../components/Img';
 
 export const StyledBox = withStyles(() => ({
     root: {
@@ -22,7 +21,7 @@ export const Heading = withStyles({
         position: 'absolute',
         top: '4rem'
     }
-})(Img);
+})(Box);
 
 export const SubHeading = withStyles({
     root: {
@@ -37,4 +36,4 @@ export const Background = withStyles(() => ({
         height: '100vh',
         objectFit: 'cover'
     }
-}))(Img);
+}))(Box);

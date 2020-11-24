@@ -1,21 +1,5 @@
 import React from 'react';
-import { Typography, withStyles } from '@material-ui/core';
-
-const StyledTypography = withStyles(({
-    fonts: {
-        xLarge
-    },
-    colors: {
-        darkGray
-    }
-}) => ({
-    root: {
-        fontSize: xLarge,
-        color: darkGray,
-        fontWeight: 'inherit',
-        margin: '2rem'
-    }
-}))(Typography);
+import { StyledTypography } from './styles';
 
 const Title = ({ children }) => (
     <StyledTypography variant="h1" align="center">

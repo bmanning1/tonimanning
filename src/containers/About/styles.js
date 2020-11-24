@@ -1,8 +1,7 @@
-import { withStyles } from '@material-ui/core';
-import Img from '../../components/Img';
+import { Box, withStyles } from '@material-ui/core';
 
 export const StyledImg = withStyles({
     root: {
         width: '100%'
     }
-})(Img);
+})(Box);

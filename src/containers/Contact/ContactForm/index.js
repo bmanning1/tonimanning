@@ -6,8 +6,8 @@ import therapies from '../../../utils/therapies';
 import Input from '../../../components/Input';
 import SelectInput from '../../../components/SelectInput';
 import Alert from '../../../components/Alert';
-import { StyledForm, StyledButton } from './styles';
 import Loading from './Loading';
+import { StyledForm, StyledButton } from './styles';
 
 const bookingOptions = ['General Enquiry', ...Object.values(therapies).map((therapy) => therapy.name)];
 
@@ -53,7 +53,7 @@ const ContactForm = () => {
             />
 
             {sendingData ? <Loading /> : (
-                <StyledForm onSubmit={handleSubmit(onSubmit)}>
+                <StyledForm component="form" onSubmit={handleSubmit(onSubmit)}>
                     <Input label="Name" name="name" error={errors.name} register={register} />
                     <Input label="Email" name="email" error={errors.email} register={register} />
                     <Input label="Phone" name="phone" type="tel" error={errors.phone} register={register} />
