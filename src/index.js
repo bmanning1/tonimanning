@@ -9,18 +9,16 @@ import 'fontsource-roboto';
 import ScrollToTop from './utils/ScrollToTop';
 
 // LONG
-// TODO: Nav component
 // TODO: Mobile view (use breakpoint in material UI)
 
 // QUICK
-// TODO: Red line under booking/enquiry when errors
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
-// TODO: Remove warnings in console
 // TODO: Do the public bit with the manifesto etc.
 
 // WAITING ON
 // TODO: About page
+// TODO: Remove warnings in console
 // TODO: Update Privacy policy
 // TODO: Remove images not used
 

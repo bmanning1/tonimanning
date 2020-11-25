@@ -17,7 +17,6 @@ export const StyledNavLink = withStyles({
     root: {
         transition: 'opacity 2s',
         opacity: ({ opacity }) => opacity,
-        textDecoration: 'none',
         '& p': {
             transition: 'opacity 2s',
             opacity: ({ opacity }) => opacity

@@ -10,6 +10,7 @@ const Input = ({
     ...props
 }) => {
     const multilineProps = multiline ? { multiline, rows: 6 } : {};
+    const shrinkOnErrorProps = error ? { InputLabelProps: { shrink: true } } : {};
 
     return (
         <StyledTextField
@@ -19,6 +20,7 @@ const Input = ({
             error={!!error}
             {...props}
             {...multilineProps}
+            {...shrinkOnErrorProps}
         />
     );
 };
