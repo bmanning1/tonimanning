@@ -28,6 +28,10 @@ export const StyledFormControl = withStyles(({
         },
         '& .MuiInput-underline:hover:not(.Mui-disabled):before, & .Mui-focused.MuiInput-underline:after': {
             borderBottomColor: mediumGray
+        },
+        '& .Mui-error.MuiInput-underline:after, & .Mui-error.MuiInput-underline:hover:before': {
+            borderBottomColor: 'red',
+            borderWidth: '1px'
         }
     }
 }))(FormControl);
