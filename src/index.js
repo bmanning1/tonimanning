@@ -14,7 +14,6 @@ import ScrollToTop from './utils/ScrollToTop';
 // QUICK
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
-// TODO: Do the public bit with the manifesto etc.
 // TODO: Replace Fade with the Fade from material UI
 
 // WAITING ON
