@@ -1,6 +1,7 @@
-import { Box, withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
+import Fade from '../../../utils/Fade';
 
-export const StyledBox = withStyles({
+export const StyledFade = withStyles({
     root: {
         display: 'flex',
         flexDirection: 'column',
@@ -10,4 +11,4 @@ export const StyledBox = withStyles({
         zIndex: '2',
         position: 'relative'
     }
-})(Box);
+})(Fade);

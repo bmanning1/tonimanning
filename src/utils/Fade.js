@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import { Box, withStyles } from '@material-ui/core';
 
-const Fade = ({ onChange, children }) => {
-    const [fade, setFade] = useState(false);
-
-    const hiddenStyle = {
-        opacity: 0.1
-    };
-
-    const fadeInStyle = {
-        opacity: 1,
+const StyledBox = withStyles(() => ({
+    root: ({ fade }) => (fade === 'true' ? {
+        opacity: '1',
         transition: 'opacity 400ms ease-in'
-    };
+    } : {
+        opacity: '0.1'
+    })
+}))(Box);
+
+const Fade = (props) => {
+    const [fade, setFade] = useState(undefined);
 
     useEffect(() => {
-        setFade(false);
-        setTimeout(() => setFade(true), 50);
-    }, [onChange]);
+        setFade(undefined);
+        setTimeout(() => setFade('true'), 50);
+    }, []);
 
-    return <div style={fade ? fadeInStyle : hiddenStyle}>{children}</div>;
+    return <StyledBox fade={fade} {...props} />;
 };
 
 export default Fade;
