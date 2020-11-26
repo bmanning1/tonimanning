@@ -4,8 +4,8 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { StyledBox, StyledLink } from './styles';
 
-const SocialMedia = () => (
-    <StyledBox>
+const SocialMedia = ({ classes = {} }) => (
+    <StyledBox className={classes.root}>
         <StyledLink alt="phone Toni Manning" href="tel:07849431937">
             <FontAwesomeIcon icon={faPhone} />
         </StyledLink>

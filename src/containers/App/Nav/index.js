@@ -1,17 +1,13 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import { isWidthDown, withWidth } from '@material-ui/core';
 import MobileNav from './Mobile';
 import DesktopNav from './Desktop';
 import { StyledFade } from './styles';
 
-const Nav = () => {
-    const isSmallScreen = useMediaQuery({ query: '(max-width: 50rem)' });
+const Nav = ({ width }) => (
+    <StyledFade>
+        {isWidthDown('sm', width) ? <MobileNav /> : <DesktopNav />}
+    </StyledFade>
+);
 
-    return (
-        <StyledFade>
-            {isSmallScreen ? <MobileNav /> : <DesktopNav />}
-        </StyledFade>
-    );
-};
-
-export default Nav;
+export default withWidth()(Nav);

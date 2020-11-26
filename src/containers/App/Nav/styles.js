@@ -6,7 +6,6 @@ export const StyledFade = withStyles({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'flex-end',
         height: '10vh',
         zIndex: '2',
         position: 'relative'

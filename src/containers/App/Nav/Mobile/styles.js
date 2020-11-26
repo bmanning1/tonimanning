@@ -15,17 +15,30 @@ export const StyledUL = withStyles(() => ({
         margin: '0',
         transition: 'margin-top 0.2s ease',
         height: '100vh',
-        marginTop: ({ open }) => (open ? '0' : '-100vh'),
-        '& li:first-child': {
-            marginTop: '6rem'
-        }
+        marginTop: ({ open }) => (open ? '0' : '-100vh')
     }
 }))(Box);
 
-export const StyledLI = withStyles({
+export const StyledLI = withStyles(({
+    breakpoints
+}) => ({
     root: {
-        margin: '0.8rem',
+        margin: ({ child }) => (child === 0 ? '15vh 0.8rem 0.8rem' : '0.8rem'),
+        [`${breakpoints.down('xs')} and (orientation: landscape)`]: {
+            margin: ({ child }) => (child === 0 ? '2rem 0.8rem 0.8rem' : '0.8rem')
+        },
         textAlign: 'center',
         listStyleType: 'none'
     }
-})(Box);
+}))(Box);
+
+export const StyledLISocialMedia = withStyles(({
+    breakpoints
+}) => ({
+    root: {
+        margin: '5vh',
+        [`${breakpoints.down('xs')} and (orientation: landscape)`]: {
+            margin: '1rem'
+        }
+    }
+}))(StyledLI);

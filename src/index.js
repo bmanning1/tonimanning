@@ -12,6 +12,7 @@ import ScrollToTop from './utils/ScrollToTop';
 // TODO: Mobile view (use breakpoint in material UI)
 
 // QUICK
+// TODO: movie socialMedia to components
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
 // TODO: Replace Fade with the Fade from material UI

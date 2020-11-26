@@ -1,39 +1,87 @@
 import { Box, withStyles } from '@material-ui/core';
 import Text from '../../components/Text';
+import SocialMedia from './SocialMedia';
 
 export const StyledBox = withStyles(() => ({
     root: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'flex-end',
-        position: 'relative',
+        justifyContent: 'space-between',
         height: '90vh',
         transition: 'opacity 2s',
         opacity: ({ opacity }) => opacity
     }
 }))(Box);
 
-export const Heading = withStyles({
+export const Heading = withStyles(({
+    breakpoints
+}) => ({
     root: {
         width: '48.8rem',
-        maxWidth: '100%',
+        maxWidth: '80vw',
+        marginBottom: '1rem',
+        [breakpoints.down('sm')]: {
+            marginBottom: '0.5rem'
+        },
+        [`${breakpoints.down('sm')} and (orientation: landscape)`]: {
+            width: 'auto',
+            height: '10vh'
+        }
+
+    }
+}))(Box);
+
+export const Subheading = withStyles(({
+    breakpoints,
+    fonts: {
+        medium
+    },
+    colors: {
+        mediumGray,
+        darkGray
+    }
+}) => ({
+    root: {
+        color: darkGray,
+        [breakpoints.down('sm')]: {
+            color: mediumGray
+        },
+        [`${breakpoints.down('sm')} and (orientation: landscape)`]: {
+            fontSize: medium
+        }
+
+    }
+}))(Text);
+
+export const HomeText = withStyles(({
+    breakpoints
+}) => ({
+    root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        margin: '7vh',
+        [breakpoints.down('sm')]: {
+            margin: '10vh'
+        }
+    }
+}))(Box);
+
+export const Background = withStyles({
+    root: {
+        overflow: 'hidden',
+        width: '100vw',
         position: 'absolute',
-        top: '4rem'
+        zIndex: '-100',
+        height: '100vh',
+        objectFit: 'cover',
+        top: '0'
     }
 })(Box);
 
-export const SubHeading = withStyles({
+export const StyledSocialMedia = withStyles({
     root: {
-        position: 'absolute',
-        top: '11.2rem'
+        margin: '1.8rem'
     }
-})(Text);
-
-export const Background = withStyles(() => ({
-    root: {
-        minWidth: '100vw',
-        height: '100vh',
-        objectFit: 'cover'
-    }
-}))(Box);
+})(SocialMedia);
