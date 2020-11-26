@@ -21,10 +21,6 @@ export const StyledBox = withStyles(({
     }
 }) => ({
     root: {
-        position: 'absolute',
-        bottom: '1.8rem',
-        fontSize: medium,
-        display: 'flex',
-        alignItems: 'center'
+        fontSize: medium
     }
 }))(Box);

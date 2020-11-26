@@ -3,7 +3,7 @@ import Text from '../../../../components/Text';
 
 export const StyledBox = withStyles({
     root: {
-        width: '100%',
+        minWidth: '11.8rem',
         height: '27.5rem',
         display: 'flex',
         flexDirection: 'column',

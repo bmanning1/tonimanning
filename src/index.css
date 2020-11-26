@@ -1,25 +1,14 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('static/Fonts/OpenSans-Light.woff') format('woff2');
-}
-
-:root {
-  /* --darkGray: #303030; */
-  --darkGray: #706d6d;
-  --mediumGray: #aaa29c;
-  --lightGray: #e9e7e6;
-  --xLargeFontSize: 1.7rem;
-  --largeFontSize: 1.3rem;
-  --mediumFontSize: 1rem;
-  --smallFontSize: 0.88rem;
+    font-family: 'Open Sans';
+    src: url('static/Fonts/OpenSans-Light.woff') format('woff2');
 }
 
 body {
-  margin: 0;
-  font-family: 'Open Sans';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative
+    margin: 0;
+    font-family: 'Open Sans';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* position: relative; */
 }
 
 html, body {

@@ -5,7 +5,7 @@ const Loading = () => {
     const [waitingText, setWaitingText] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setWaitingText('Sorry for the wait...'), 4000);
+        const timeout = setTimeout(() => setWaitingText('Sorry for the wait...'), 5000);
 
         return () => {
             clearTimeout(timeout);
@@ -13,7 +13,7 @@ const Loading = () => {
     }, []);
 
     return (
-        <StyledBox component="div">
+        <StyledBox>
             <StyledCircularProgress />
             <StyledText>{waitingText}</StyledText>
         </StyledBox>

@@ -10,9 +10,10 @@ import { StyledBox } from './styles';
 
 const App = () => {
     const location = useLocation();
+    const onHomePage = location.pathname === '/';
 
     return (
-        <StyledBox>
+        <StyledBox overflow={onHomePage ? 'hidden' : 'inherit'}>
             <Nav />
 
             <Switch className="content" location={location}>
@@ -23,7 +24,7 @@ const App = () => {
                 <Route component={() => <Redirect to="/" />} />
             </Switch>
 
-            {location.pathname !== '/' && <Footer />}
+            {!onHomePage && <Footer />}
         </StyledBox>
     );
 };

@@ -8,19 +8,20 @@ import './index.css';
 import 'fontsource-roboto';
 import ScrollToTop from './utils/ScrollToTop';
 
-// LONG
-// TODO: Mobile view (use breakpoint in material UI)
-
 // QUICK
+// TODO: move socialMedia to components
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
-// TODO: Replace Fade with the Fade from material UI
 
 // WAITING ON
 // TODO: About page
 // TODO: Remove warnings in console
 // TODO: Update Privacy policy
 // TODO: Remove images not used
+
+// NO RUSH
+// TODO: Replace Fade with the Fade from material UI
+// TODO: Fix audits - Branch exists already, just can't get it to run. Ran npm audit
 
 const theme = createMuiTheme({
     typography: {
