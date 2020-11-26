@@ -29,7 +29,6 @@ export const Heading = withStyles(({
             width: 'auto',
             height: '10vh'
         }
-
     }
 }))(Box);
 
