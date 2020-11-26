@@ -13,6 +13,6 @@ export const StyledImg = withStyles(() => ({
 
 export const StyledGrid = withStyles({
     root: {
-        minWidth: '11.8rem'
+        minWidth: '15rem'
     }
 })(Grid);
