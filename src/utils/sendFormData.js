@@ -1,5 +1,5 @@
 // eslint-disable-next-line max-len
-const formURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdW3mZBm-pMc9hD3HZqSQdEEx5SV0O4cQ0YjAUwp-nLtWNkpQ/formResponse';
+const formURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSep9_wZpXMAtFmsyfrKkGYpBwWqOhVRnY6zVZ0E7-ErrggEow/formResponse';
 
 // NOTE: bm-cors-proxy whitelists urls so cannot be used locally
 const proxyURL = process.env.REACT_APP_ENV === 'local'
@@ -8,11 +8,11 @@ const proxyURL = process.env.REACT_APP_ENV === 'local'
 
 // NOTE: Get googleID values from submitting the form and checking the request
 const googleIDs = {
-    name: 'entry.758967776',
-    email: 'entry.1264703845',
-    phone: 'entry.1775748061',
-    booking: 'entry.770141734',
-    message: 'entry.100639756'
+    name: 'entry.2005620554',
+    email: 'entry.1045781291',
+    phone: 'entry.1065046570',
+    booking: 'entry.1166974658',
+    message: 'entry.839337160'
 };
 
 const sendFormData = async({ data }) => {
