@@ -1,6 +1,6 @@
 import { Box, withStyles } from '@material-ui/core';
 import Text from '../../components/Text';
-import SocialMedia from './SocialMedia';
+import SocialMedia from '../../components/SocialMedia';
 
 export const StyledBox = withStyles(() => ({
     root: {

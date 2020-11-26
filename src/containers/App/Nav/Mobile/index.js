@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import menu from '../../../../utils/menu';
 import Hamburger from '../../../../components/Hamburger';
 import NavLink from '../../../../components/NavLink';
-import SocialMedia from '../../../Home/SocialMedia';
+import SocialMedia from '../../../../components/SocialMedia';
 import { StyledUL, StyledLI, StyledLISocialMedia } from './styles';
 
 const MobileNav = () => {
