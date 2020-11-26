@@ -8,12 +8,13 @@ export const StyledButton = withStyles({
     }
 })(Button);
 
-export const StyledImg = withStyles({
+export const StyledImg = withStyles(() => ({
     root: {
         width: '100%',
-        marginTop: '1rem'
+        marginTop: '1rem',
+        opacity: ({ opacity }) => opacity
     }
-})(Box);
+}))(Box);
 
 export const StyledNavLink = withStyles({
     root: {

@@ -8,10 +8,6 @@ import ScrollToTop from './utils/ScrollToTop';
 import 'fontsource-roboto';
 import './index.css';
 
-// QUICK
-// TODO: Add loading for therapy image & double check load of therapy
-//          images (maybe put the opacity thing on the text & img instead)
-
 // WAITING ON
 // TODO: Remove warnings in console
 // TODO: Update Privacy policy
