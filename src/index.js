@@ -9,7 +9,6 @@ import 'fontsource-roboto';
 import './index.css';
 
 // WAITING ON
-// TODO: Remove warnings in console
 // TODO: Update Privacy policy
 
 // NO RUSH

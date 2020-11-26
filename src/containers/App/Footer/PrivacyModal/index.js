@@ -3,7 +3,6 @@ import {
     Dialog,
     DialogActions,
     DialogContent,
-    DialogContentText,
     DialogTitle
 } from '@material-ui/core';
 import Button from '../../../../components/Button';
@@ -39,9 +38,7 @@ const PrivacyModal = ({ open, onClose }) => (
             <Text size="medium">Privacy</Text>
         </DialogTitle>
         <DialogContent dividers>
-            <DialogContentText>
-                <Text>{privacy}</Text>
-            </DialogContentText>
+            <Text align="justify">{privacy}</Text>
         </DialogContent>
         <DialogActions>
             <Button size="small" nofill onClick={onClose}>
