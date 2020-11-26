@@ -4,21 +4,20 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
-import './index.css';
-import 'fontsource-roboto';
 import ScrollToTop from './utils/ScrollToTop';
+import 'fontsource-roboto';
+import './index.css';
 
 // QUICK
 // TODO: Add loading for therapy image & double check load of therapy
 //          images (maybe put the opacity thing on the text & img instead)
 
 // WAITING ON
-// TODO: About page
 // TODO: Remove warnings in console
 // TODO: Update Privacy policy
-// TODO: Remove images not used
 
 // NO RUSH
+// TODO: Update About page images & then remove images not used
 // TODO: Replace Fade with the Fade from material UI
 // TODO: Fix audits - Branch exists already, just can't get it to run. Ran npm audit
 
