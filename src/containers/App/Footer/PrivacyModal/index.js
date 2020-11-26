@@ -1,50 +1,30 @@
 import React from 'react';
-import {
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogTitle
-} from '@material-ui/core';
+import { Dialog, DialogContent } from '@material-ui/core';
 import Button from '../../../../components/Button';
 import Text from '../../../../components/Text';
 
-const privacy = `Your privacy is important to me.
+const privacy = [
+    `Completed contact forms submitted from the website will be sent to a google form and not shared with any
+     other parties.`,
 
-    I collect two types of information from clients/potential clients:
+    `During the initial consultation, information will be collected from you in order for you to receive
+     tailored massages and to ensure a safe treatment. This data will not be passed on to third parties.`,
 
-    contact information - address, email address, phone numbers; and
-    treatment related information - if you do have a treatment, I will
-    need to collect some health / lifestyle information from you. This
-    helps me to tailor the treatment to your circumstances. I will also
-    keep records of the treatments I carry out on you.
-    With your permission, I will add your email address to an electronic
-    mailing list that I occasionally use to send out information about
-    offers, new treatments etc. If you no longer wish to receive these,
-    you can unsubscribe at any time either by contacting me or by using
-    the link that will be contained in all the emails that I send out.
-
-    The treatment related information is only kept on paper and is held
-    safely. I will dispose of it securely once I no longer need it.
-
-    I will not share any of your personal information (either your contact
-    information or treatment related information) with anyone else, even in anonymised form.
-
-    If you have any concerns about privacy or the safety or accuracy of the
-    information I hold about you, please contact me.`;
+    `Records will be safely stored for up to 7 years and any information that is not required or is out of
+     date will be removed.  Please get in touch if any of your details change so that your records can be updated.`
+];
 
 const PrivacyModal = ({ open, onClose }) => (
     <Dialog open={open} onClose={onClose}>
-        <DialogTitle>
-            <Text size="medium">Privacy</Text>
-        </DialogTitle>
+        <Text size="medium">Privacy Notice</Text>
         <DialogContent dividers>
-            <Text align="justify">{privacy}</Text>
+            {privacy.map((paragraph) => (
+                <Text align="justify">{paragraph}</Text>
+            ))}
         </DialogContent>
-        <DialogActions>
-            <Button size="small" nofill onClick={onClose}>
-                Close
-            </Button>
-        </DialogActions>
+        <Button size="small" nofill onClick={onClose}>
+            Close
+        </Button>
     </Dialog>
 );
 
