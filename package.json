@@ -2,7 +2,7 @@
     "name": "toni-manning",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://bmanning1.github.io/tonimanning",
+    "homepage": "https://www.tonimanning.co.uk",
     "scripts": {
         "start": "REACT_APP_ENV=local react-scripts start",
         "build": "REACT_APP_ENV=local react-scripts build && cp build/index.html build/404.html",
