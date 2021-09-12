@@ -18,7 +18,8 @@ const About = () => (
                 </Text>
                 <Text align="justify">
                     In addition to specialisms in sports massage and deep tissue massage she is a qualified practitioner
-                    in Indian head massage, reflexology, hot stone massage and facial reflexology.
+                    in Indian head massage, reflexology, hot stone massage and facial reflexology. She also offers
+                    facials and aromatherapy massages using Neal’s Yard Remedies organic products.
                 </Text>
                 <Text align="justify">
                     Based in her private treatment room in South West Hertfordshire, Toni Manning is a member of the
