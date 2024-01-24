@@ -15,23 +15,23 @@ export default {
     sports: {
         name: 'Sports Massage',
         img: Sports,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '45 minutes',
-                value: '42.00'
+                value: '44.00'
             },
             {
                 label: '30 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '128.00'
+                value: '130.00'
             }
         ],
         description: `Sports Massage can be used to treat many types of soft tissue injury such as back pain, stiff
@@ -43,23 +43,23 @@ export default {
     'deep-relaxation': {
         name: 'Deep Relaxation Massage',
         img: DeepRelaxation,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '45 minutes',
-                value: '42.00'
+                value: '44.00'
             },
             {
                 label: '30 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '128.00'
+                value: '130.00'
             }
         ],
         description: `A gentle but effective and deeply soothing treatment combining Eastern and Western techniques. It
@@ -69,23 +69,23 @@ export default {
     aromatherapy: {
         name: 'Aromatherapy Massage',
         img: GiftVouchers,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '57.00'
+                value: '59.00'
             },
             {
                 label: '45 minutes',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '30 minutes',
-                value: '42.00'
+                value: '44.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '160.00'
+                value: '162.00'
             }
         ],
         description: `A deeply relaxing massage that can be tailored to your needs. Choose from a range of aromatherapy
@@ -96,19 +96,19 @@ export default {
     'indian-head': {
         name: 'Indian Head Massage',
         img: IndianHead,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: '45 minute initial consultation and massage',
-                value: '37.00'
+                value: '39.00'
             },
             {
                 label: '30 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: 'Massage package (4 x 30 minutes)',
-                value: '108.00'
+                value: '110.00'
             }
         ],
         description: `A soothing and calming treatment, beneficial for stress related conditions such as tension
@@ -118,27 +118,27 @@ export default {
     facials: {
         name: 'Facials',
         img: Facial,
-        pricesFrom: '27.00',
+        pricesFrom: '29.00',
         prices: [
             {
                 label: '75 minutes luxury',
-                value: '57.00'
+                value: '59.00'
             },
             {
                 label: '60 minutes',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '45 minutes',
-                value: '37.00'
+                value: '39.00'
             },
             {
                 label: '30 minutes',
-                value: '27.00'
+                value: '29.00'
             },
             {
                 label: 'Facials package (4 x 45 minutes)',
-                value: '137.00'
+                value: '139.00'
             }
         ],
         description: `Wonderfully relaxing, aromatic facials using Neal’s Yard Remedies (NYR) gentle, organic products.
@@ -150,23 +150,23 @@ export default {
     facial: {
         name: 'Facial Reflexology',
         img: Facial,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consultation and massage 60 minutes',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '45 minutes',
-                value: '42.00'
+                value: '44.00'
             },
             {
                 label: '30 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '128.00'
+                value: '130.00'
             }
         ],
         description: `A gentle, luxurious and deeply relaxing treatment that works on the principle that the body's
@@ -178,19 +178,19 @@ export default {
     'hot-stone': {
         name: 'Hot Stone Massage',
         img: HotStone,
-        pricesFrom: '52.00',
+        pricesFrom: '54.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '52.00'
+                value: '54.00'
             },
             {
                 label: '45 minutes',
-                value: '57.00'
+                value: '59.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '168.00'
+                value: '170.00'
             }
         ],
         description: `A comforting and deeply relaxing advanced massage, using hot stones. The use of heated stones
@@ -200,23 +200,23 @@ export default {
     reflexology: {
         name: 'Reflexology',
         img: Reflexology,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '47.00'
+                value: '49.00'
             },
             {
                 label: '45 minutes',
-                value: '42.00'
+                value: '44.00'
             },
             {
                 label: '30 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '128.00'
+                value: '130.00'
             }
         ],
         description: `A treatment that works on the principle that the major organs and systems of the body are mapped
@@ -226,7 +226,7 @@ export default {
     bespoke: {
         name: 'Bespoke Massage Packages',
         img: Bespoke,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [],
         description: `Tailor-made packages based on a combination of treatments. Please get in contact to discuss
              requirements.`
@@ -234,23 +234,23 @@ export default {
     online: {
         name: 'Online and Virtual Sessions',
         img: Online,
-        pricesFrom: '32.00',
+        pricesFrom: '34.00',
         prices: [
             {
                 label: 'Initial consulation and massage (60 minutes)',
-                value: '37.00'
+                value: '39.00'
             },
             {
                 label: '45 minutes',
-                value: '32.00'
+                value: '34.00'
             },
             {
                 label: '30 minutes',
-                value: '22.00'
+                value: '24.00'
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '108.00'
+                value: '110.00'
             }
         ],
         description: `Tailor made remote appointments via Zoom are also available. These can cover self-massage
@@ -259,9 +259,9 @@ export default {
     vouchers: {
         name: 'Gift Vouchers',
         img: GiftVouchers,
-        pricesFrom: '20.00',
+        pricesFrom: '22.00',
         prices: [],
-        description: `Gift vouchers are available starting at just £20 so they can be used to cover a whole
+        description: `Gift vouchers are available starting at just £22 so they can be used to cover a whole
              treatment/course, or to go towards part of the cost of a treatment.
 
              Gift vouchers are valid for 6 months.`
