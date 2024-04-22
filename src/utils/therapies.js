@@ -197,32 +197,32 @@ export default {
              aids the release of muscle tension without the need for deep pressure which results in a therapeutic
              treatment that is also a wonderfully soothing experience.`
     },
-    reflexology: {
-        name: 'Reflexology',
-        img: Reflexology,
-        pricesFrom: '34.00',
-        prices: [
-            {
-                label: 'Initial consulation and massage (60 minutes)',
-                value: '49.00'
-            },
-            {
-                label: '45 minutes',
-                value: '44.00'
-            },
-            {
-                label: '30 minutes',
-                value: '34.00'
-            },
-            {
-                label: 'Massage package (4 x 45 minutes)',
-                value: '136.00'
-            }
-        ],
-        description: `A treatment that works on the principle that the major organs and systems of the body are mapped
-             out on the feet and so by treating the feet, it is possible to treat the whole body. It is particularly
-             beneficial for stress-related conditions such as Irritable Bowel Syndrome (IBS) or insomnia.`
-    },
+    // reflexology: {
+    //     name: 'Reflexology',
+    //     img: Reflexology,
+    //     pricesFrom: '34.00',
+    //     prices: [
+    //         {
+    //             label: 'Initial consulation and massage (60 minutes)',
+    //             value: '49.00'
+    //         },
+    //         {
+    //             label: '45 minutes',
+    //             value: '44.00'
+    //         },
+    //         {
+    //             label: '30 minutes',
+    //             value: '34.00'
+    //         },
+    //         {
+    //             label: 'Massage package (4 x 45 minutes)',
+    //             value: '136.00'
+    //         }
+    //     ],
+    //     description: `A treatment that works on the principle that the major organs and systems of the body are mapped
+    //          out on the feet and so by treating the feet, it is possible to treat the whole body. It is particularly
+    //          beneficial for stress-related conditions such as Irritable Bowel Syndrome (IBS) or insomnia.`
+    // },
     bespoke: {
         name: 'Bespoke Massage Packages',
         img: Bespoke,
