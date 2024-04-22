@@ -31,7 +31,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '130.00'
+                value: '136.00'
             }
         ],
         description: `Sports Massage can be used to treat many types of soft tissue injury such as back pain, stiff
@@ -59,7 +59,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '130.00'
+                value: '136.00'
             }
         ],
         description: `A gentle but effective and deeply soothing treatment combining Eastern and Western techniques. It
@@ -85,7 +85,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '162.00'
+                value: '168.00'
             }
         ],
         description: `A deeply relaxing massage that can be tailored to your needs. Choose from a range of aromatherapy
@@ -108,7 +108,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 30 minutes)',
-                value: '110.00'
+                value: '116.00'
             }
         ],
         description: `A soothing and calming treatment, beneficial for stress related conditions such as tension
@@ -138,7 +138,7 @@ export default {
             },
             {
                 label: 'Facials package (4 x 45 minutes)',
-                value: '139.00'
+                value: '145.00'
             }
         ],
         description: `Wonderfully relaxing, aromatic facials using Neal’s Yard Remedies (NYR) gentle, organic products.
@@ -166,7 +166,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '130.00'
+                value: '136.00'
             }
         ],
         description: `A gentle, luxurious and deeply relaxing treatment that works on the principle that the body's
@@ -190,7 +190,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '170.00'
+                value: '176.00'
             }
         ],
         description: `A comforting and deeply relaxing advanced massage, using hot stones. The use of heated stones
@@ -216,7 +216,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '130.00'
+                value: '136.00'
             }
         ],
         description: `A treatment that works on the principle that the major organs and systems of the body are mapped
@@ -250,7 +250,7 @@ export default {
             },
             {
                 label: 'Massage package (4 x 45 minutes)',
-                value: '110.00'
+                value: '116.00'
             }
         ],
         description: `Tailor made remote appointments via Zoom are also available. These can cover self-massage

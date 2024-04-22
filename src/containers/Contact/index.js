@@ -21,23 +21,30 @@ const Contact = () => (
     <>
         <Title>Contact</Title>
 
-        <Text align="justify">
+        {/* <Text align="justify">
             To book a treatment or for general enquiries please use the form below or contact Toni
             on <Phone>07849431937</Phone> or via email at <Email>tonimanning@live.co.uk</Email>.
         </Text>
         <Text align="justify">
             If using the form and you do not hear back in a couple of days we may have had a problem with our
             system so please get in contact with the details above.
-        </Text>
+        </Text> */}
 
-        <Grid wrap="wrap" container spacing={6}>
+        <Text align="justify">
+            To book a treatment or for general enquiries please contact Toni
+            on <b><Phone>07849431937</Phone></b> or via email
+            at <b><Email>tonimanning@live.co.uk</Email></b>.
+        </Text>
+        <Map />
+
+        {/* <Grid wrap="wrap" container spacing={6}>
             <Grid item xs>
                 <ContactForm />
             </Grid>
             <Grid item xs>
                 <Map />
             </Grid>
-        </Grid>
+        </Grid> */}
     </>
 );
 
